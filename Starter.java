@@ -33,7 +33,7 @@ public class Starter {
 
 
     static void draw(int x, int y, int height, int depth, int limit) {
-        delay(20);
+        delay(50);
         draw.addLast(x, y, height);
 
         if (depth <= limit) {
@@ -42,7 +42,7 @@ public class Starter {
             draw(x + height / 2, y - height / 2, height / 2, depth + 1, limit);
             draw(x + height / 2, y + height / 2, height / 2, depth + 1, limit);
         }
-        delay(20);
+        delay(50);
         draw.removeLast();
 
     }
